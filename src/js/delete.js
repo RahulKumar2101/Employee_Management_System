@@ -1,5 +1,5 @@
-import { employee_list } from "./db.js";
-import { refreshTable } from "./refreash.js";
+// import { employee_list } from "./db.js";
+// import { refreshTable } from "./refreash.js";
 
 // deletehandler
 export function deleteHandler(event) {

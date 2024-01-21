@@ -1,4 +1,5 @@
- let employee_list = [
+console.log("db.js");
+let employee_list = [
     {
       first_name: "ramesh",
       Last_name: "fadrate",
