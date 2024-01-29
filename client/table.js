@@ -1,11 +1,11 @@
 async function init() {
   let employee_list = [];
 
-  const BASE_URL = `https://f3fc3cfd-b1ac-4318-bc40-ab1b1a530ccd-00-2uvud6axgb4rs.riker.replit.dev`;
-  const GET_EMPLOYEE = `employee`;
+  // const BASE_URL = `https://f3fc3cfd-b1ac-4318-bc40-ab1b1a530ccd-00-2uvud6axgb4rs.riker.replit.dev`;
 
+  const BASE_URL='http://localhost:3000/'
   async function getEmployee() {
-    const response = await fetch(`${BASE_URL}/${GET_EMPLOYEE}`);
+    const response = await fetch(`${BASE_URL}/`);
     const data = await response.json();
 
      employee_list = data;
@@ -30,7 +30,8 @@ async function init() {
     if (obj.first_name === "" && obj.Last_name === "" && obj.Email_id === "") {
       alert("all fields are mendatory");
     } else {
-      employee_list.push(obj);
+      // make a network request by sending/postinmg 
+      // employee_list.push(obj);
 
       // show newly added data
       refreshTable(employee_list);
